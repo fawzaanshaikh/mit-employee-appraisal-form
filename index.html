@@ -28,7 +28,7 @@ require_once('connection.php');
 
 
 
-        <link rel="stylesheet" href="assets/css/style1.css">
+        <link rel="stylesheet" href="./style.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
@@ -37,22 +37,41 @@ require_once('connection.php');
     <body>
     
         <form action = "#" class = "form">
+
+            <!-- Typed input part of the form -->
             <div class = "typed-input">
-                <table class = "typed-input-table" style = "border: solid black 2px;">
-                    <tr>
-                        <td class = "typed-td">Name of the employee: </td><td class = "typed-td"><input type = "text" placeholder = "enter the name" required></td><br>
-                    </tr>
-                    <tr>
-                        <td class = "typed-td">Employee ID: </td><td class = "typed-td"><input type = "text" placeholder = "enter the ID"><br></td>
-                    </tr>
-                    <tr>
-                        <td class = "typed-td">Name of the Institute and Department: </td><td class = "typed-td"><input type = "text" placeholder = "enter the institute & department" required><br></td>
-                    </tr>
-                    <tr>
-                        <td class = "typed-td">Name of the Supervisor: </td><td class = "typed-td"><input type = "text" placeholder = "enter the name of the supervisor" required><br></td>
-                    </tr>
+                <table class = "typed-input-table">
+                    <tbody>
+                        <tr>
+                            <td class = "typed-td"><label for = "emp-name">Name of the employee: </label></td>
+                            <td class = "typed-td">
+                                <input type = "text" id = "emp-name" placeholder = "Enter the name" size = "30" required>
+                            </td><br>
+                        </tr>
+                        <tr>
+                            <td class = "typed-td"><label for = "emp-id">Employee ID: </label></td>
+                            <td class = "typed-td">
+                                <input type = "text" id = "emp-id" placeholder = "Enter the ID" size = "30"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "typed-td"><label for = "institute">Name of the Institute and Department: </label></td>
+                            <td class = "typed-td">
+                                <input type = "text" id = "institute" placeholder = "Enter the Institute & Department" size = "30" required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "typed-td"><label for = "supervisor">Name of the Supervisor: </label></td>
+                            <td class = "typed-td">
+                                <input type = "text" id = "supervisor" placeholder = "Enter the name of the Supervisor" size = "30" required><br>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
+
+            
+
         </form>
 
     </body>
