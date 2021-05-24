@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.typed-input {
+    position: relative;
+    top: 100px;
+    height: 200px;
+    width: 455px;
+    margin: auto;
+}
+
+.typed-td {
+    padding: 10px;
+}
