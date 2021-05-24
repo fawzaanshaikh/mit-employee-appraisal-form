@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    height: 1vh;
+}
+
 .typed-input {
     position: relative;
     top: 100px;
@@ -13,4 +17,12 @@
 
 .typed-td {
     padding: 10px;
+}
+
+.eval-check {
+    position: relative;
+    top: 180px;
+    height: 290px;
+    width: 290px;
+    margin: auto;
 }
