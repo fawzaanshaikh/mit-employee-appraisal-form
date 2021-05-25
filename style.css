@@ -26,3 +26,13 @@ body {
     width: 290px;
     margin: auto;
 }
+
+.rb-text {
+    position: relative;
+    top: -1px;
+}
+
+#check {
+    margin-top: 10px;
+    margin-right: 5px;
+}
