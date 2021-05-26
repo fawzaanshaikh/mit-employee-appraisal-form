@@ -7,6 +7,7 @@ body {
     height: 1vh;
 }
 
+/* Typed Input */
 .typed-input {
     position: relative;
     top: 100px;
@@ -19,6 +20,7 @@ body {
     padding: 10px;
 }
 
+/* Employee Evaluation Check */
 .eval-check {
     position: relative;
     top: 180px;
@@ -35,4 +37,25 @@ body {
 #check {
     margin-top: 10px;
     margin-right: 5px;
+}
+
+/* All tables in general */
+th {
+    background-color: rgb(228, 228, 228);
+}
+
+.table {
+    position: relative;
+    top: 50px;
+}
+
+.caption {
+    position: relative;
+    top: -10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.radio-data {
+    text-align: center; 
 }
