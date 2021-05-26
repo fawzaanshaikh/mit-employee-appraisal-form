@@ -36,61 +36,152 @@ require_once('connection.php');
 
     <body>
     
-        <form action = "#" class = "form">
+        <div class = "container">
+            <form action = "#" class = "form">
 
-            <!-- Typed input part of the form -->
-            <div class = "typed-input">
-                <table class = "typed-input-table">
-                    <tbody>
-                        <tr>
-                            <td class = "typed-td"><label for = "emp-name">Name of the employee: </label></td>
-                            <td class = "typed-td">
-                                <input type = "text" id = "emp-name" placeholder = "Enter the name" size = "30" required>
-                            </td><br>
-                        </tr>
-                        <tr>
-                            <td class = "typed-td"><label for = "emp-id">Employee ID: </label></td>
-                            <td class = "typed-td">
-                                <input type = "text" id = "emp-id" placeholder = "Enter the ID" size = "30"><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "typed-td"><label for = "institute">Name of the Institute and Department: </label></td>
-                            <td class = "typed-td">
-                                <input type = "text" id = "institute" placeholder = "Enter the Institute & Department" size = "30" required><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "typed-td"><label for = "supervisor">Name of the Supervisor: </label></td>
-                            <td class = "typed-td">
-                                <input type = "text" id = "supervisor" placeholder = "Enter the name of the Supervisor" size = "30" required><br>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <!-- Typed input -->
+                <div class = "typed-input">
+                    <table class = "typed-input-table">
 
-            <!-- Employee evaluation check -->
-            <div class = "eval-check">
-                <label for = "check">Has this employee been evaluated before?<br></label><br>
-                <input id = "check" type = "radio" name = "check-eval" value = "yes"><span class = "rb-text">Yes</span><br>
-                <input id = "check" type = "radio" name = "check-eval" value = "yes"><span class = "rb-text">No</span>
-            </div>
+                        <tbody>
+                            <tr>
+                                <td class = "typed-td"><label for = "emp-name">Name of the employee: </label></td>
+                                <td class = "typed-td">
+                                    <input type = "text" id = "emp-name" placeholder = "Enter the name" size = "30" required>
+                                </td><br>
+                            </tr>
+                            <tr>
+                                <td class = "typed-td"><label for = "emp-id">Employee ID: </label></td>
+                                <td class = "typed-td">
+                                    <input type = "text" id = "emp-id" placeholder = "Enter the ID" size = "30"><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "typed-td"><label for = "institute">Name of the Institute and Department: </label></td>
+                                <td class = "typed-td">
+                                    <input type = "text" id = "institute" placeholder = "Enter the Institute & Department" size = "30" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "typed-td"><label for = "supervisor">Name of the Supervisor: </label></td>
+                                <td class = "typed-td">
+                                    <input type = "text" id = "supervisor" placeholder = "Enter the name of the Supervisor" size = "30" required><br>
+                                </td>
+                            </tr>
+                        </tbody>
 
-            <div class = "output">
-                <table>
-                    <tbody>
-                        <th></th>
-                        <th>Unsatifactory</th>
-                        <th>Improvement Needed</th>
-                        <th>Meets Expectations</th>
-                        <th>Exceeds Expectations</th>
-                        <th>Exceptional</th>
-                    </tbody>
-                </table>
-            </div>
+                    </table>
+                </div>
 
-        </form>
+                <!-- Employee evaluation check -->
+                <div class = "eval-check">
+                    <label for = "check">Has this employee been evaluated before?<br></label><br>
+                    <input id = "check" type = "radio" name = "check-eval" value = "yes"><span class = "rb-text">Yes</span><br>
+                    <input id = "check" type = "radio" name = "check-eval" value = "yes"><span class = "rb-text">No</span>
+                </div>
+
+                <!-- Output related -->
+                <div class = "output">
+                    <table class = "table">
+
+                        <caption>Output Related</caption>
+                        <tbody class = "main-table">
+                            <th class = "main-table-head"></th>
+                            <th class = "main-table-head">Unsatisfactory</th>
+                            <th class = "main-table-head">Improvement Needed</th>
+                            <th class = "main-table-head">Meets Expectations</th>
+                            <th class = "main-table-head">Exceeds Expectations</th>
+                            <th class = "main-table-head">Exceptional</th>
+
+                            <tr>
+                                <td>Quality of work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>
+                            <tr>
+                                <td>Seriousness in executing the work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>	
+                            <tr>
+                                <td>Completes the assigned work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>
+                            <tr>
+                                <td>Time taken to complete the assigned work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!-- Output related -->
+                <div class = "output">
+                    <table class = "table">
+
+                        <caption>Output Related</caption>
+                        <tbody class = "main-table">
+                            <th class = "main-table-head"></th>
+                            <th class = "main-table-head">Unsatisfactory</th>
+                            <th class = "main-table-head">Improvement Needed</th>
+                            <th class = "main-table-head">Meets Expectations</th>
+                            <th class = "main-table-head">Exceeds Expectations</th>
+                            <th class = "main-table-head">Exceptional</th>
+
+                            <tr>
+                                <td>Quality of work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>
+                            <tr>
+                                <td>Seriousness in executing the work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>	
+                            <tr>
+                                <td>Completes the assigned work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>
+                            <tr>
+                                <td>Time taken to complete the assigned work</td>
+                                <td><input type = "radio" name = "output" id = "output-unsatisfactory" class = "option" value = "unsatisfactory"></td>
+                                <td><input type = "radio" name = "output" id = "output-imp-needed" class = "option" value = "imp-needed"></td>
+                                <td><input type = "radio" name = "output" id = "output-meets-exp" class = "option" value = "meets-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceeds-exp" class = "option" value = "exceeds-exp"></td>
+                                <td><input type = "radio" name = "output" id = "output-exceptional" class = "option" value = "exceptional"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </form>
+        </div>
 
     </body>
 </html>
