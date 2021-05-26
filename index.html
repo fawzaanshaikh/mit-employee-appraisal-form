@@ -77,9 +77,9 @@ require_once('connection.php');
 
                 <!-- Employee Evaluation Check -->
                 <div class = "eval-check">
-                    <label for = "check">Has this employee been evaluated before?<br></label><br>
-                    <input id = "check" type = "radio" name = "check-eval" value = "yes"><span class = "rb-text">Yes</span><br>
-                    <input id = "check" type = "radio" name = "check-eval" value = "yes"><span class = "rb-text">No</span>
+                    <strong>Has this employee been evaluated before?<br></strong><br>
+                    <input id = "yes" type = "radio" name = "check-eval" value = "yes"><label for = "yes"><span class = "rb-text">Yes</span></label>
+                    <input id = "no" type = "radio" name = "check-eval" value = "no"><label for = "no"><span class = "rb-text">No</span></label>
                 </div>
 
                 <!-- Output Related -->
@@ -530,6 +530,7 @@ require_once('connection.php');
 
                 <hr class = "horizontal-line">
 
+                <!-- Text Area Inputs -->
                 <div class = "text-area-inputs">
                     
                     <div class = "text-area-space">
@@ -547,6 +548,14 @@ require_once('connection.php');
                         <textarea id = "areas-excel" name = "areas-excel" rows = "5" cols = "100"></textarea>
                     </div>
                 
+                </div>
+
+                <!-- Recommend for Employee -->
+                <div class = "recommend-for-employee">
+                    <strong>What do you recommend for this employee?</strong><br>
+                    <input type = "radio" id = "continue" name = "continue" value = "continue"><label for = "continue"><span class = "rb-text"> Confirmation / Continuation</span></label><br>
+                    <input type = "radio" id = "extend" name = "extend" value = "extend"><label for = "extend"><span class = "rb-text"> Extend Probation</span></label><br>
+                    <input type = "radio" id = "discontinue" name = "discontinue" value = "discontinue"><label for = "discontinue"><span class = "rb-text"> Discontinuation</span></label><br>
                 </div>
 
             </form>
