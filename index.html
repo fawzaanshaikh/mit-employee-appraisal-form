@@ -374,50 +374,50 @@ require_once('connection.php');
 
                 <hr class = "horizontal-line">
 
-                <!-- Adaptability Related -->
-                <div class = "adaptability">
+                <!-- Decision Making & Problem Solving Related -->
+                <div class = "dmps">
                     <table class = "table">
 
-                        <caption class = "caption"><strong>Adaptability Related</strong></caption>
+                        <caption class = "caption"><strong>Decision Making & Problem Solving Related</strong></caption>
                         <tbody class = "main-table">
                             <th class = "main-table-head"></th>
-                            <th class = "main-table-head"><label for = "adaptability-unsatisfactory">Unsatisfactory</label></th>
-                            <th class = "main-table-head"><label for = "adaptability-imp-needed">Improvement Needed</label></th>
-                            <th class = "main-table-head"><label for = "adaptability-meets-exp">Meets Expectations</label></th>
-                            <th class = "main-table-head"><label for = "adaptability-exceeds-exp">Exceeds Expectations</label></th>
-                            <th class = "main-table-head"><label for = "adaptability-exceptional">Exceptional</label></th>
+                            <th class = "main-table-head"><label for = "dmps-unsatisfactory">Unsatisfactory</label></th>
+                            <th class = "main-table-head"><label for = "dmps-imp-needed">Improvement Needed</label></th>
+                            <th class = "main-table-head"><label for = "dmps-meets-exp">Meets Expectations</label></th>
+                            <th class = "main-table-head"><label for = "dmps-exceeds-exp">Exceeds Expectations</label></th>
+                            <th class = "main-table-head"><label for = "dmps-exceptional">Exceptional</label></th>
 
                             <tr>
-                                <td>Willingness to adapt to change</td>
-                                <td class = "radio-data"><input type = "radio" name = "adapt" id = "adaptability-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adapt" id = "adaptability-imp-needed" class = "option" value = "imp-needed" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adapt" id = "adaptability-meets-exp" class = "option" value = "meets-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adapt" id = "adaptability-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adapt" id = "adaptability-exceptional" class = "option" value = "exceptional" required></td>
+                                <td>Doesn't need any supervision</td>
+                                <td class = "radio-data"><input type = "radio" name = "supervision" id = "dmps-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "supervision" id = "dmps-imp-needed" class = "option" value = "imp-needed" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "supervision" id = "dmps-meets-exp" class = "option" value = "meets-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "supervision" id = "dmps-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "supervision" id = "dmps-exceptional" class = "option" value = "exceptional" required></td>
                             </tr>
                             <tr>
-                                <td>Enthusiasm about new challenges & ideas</td>
-                                <td class = "radio-data"><input type = "radio" name = "enthu" id = "adaptability-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "enthu" id = "adaptability-imp-needed" class = "option" value = "imp-needed" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "enthu" id = "adaptability-meets-exp" class = "option" value = "meets-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "enthu" id = "adaptability-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "enthu" id = "adaptability-exceptional" class = "option" value = "exceptional" required></td>
+                                <td>Attempts to solve the problems on his own before escalating it to the supervisor</td>
+                                <td class = "radio-data"><input type = "radio" name = "own" id = "dmps-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "own" id = "dmps-imp-needed" class = "option" value = "imp-needed" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "own" id = "dmps-meets-exp" class = "option" value = "meets-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "own" id = "dmps-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "own" id = "dmps-exceptional" class = "option" value = "exceptional" required></td>
                             </tr>	
                             <tr>
-                                <td>Adjustment & adaptation to changing circumstances</td>
-                                <td class = "radio-data"><input type = "radio" name = "adjust" id = "adaptability-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adjust" id = "adaptability-imp-needed" class = "option" value = "imp-needed" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adjust" id = "adaptability-meets-exp" class = "option" value = "meets-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adjust" id = "adaptability-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "adjust" id = "adaptability-exceptional" class = "option" value = "exceptional" required></td>
+                                <td>Proactively suggests solutions to the problems</td>
+                                <td class = "radio-data"><input type = "radio" name = "suggests" id = "dmps-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "suggests" id = "dmps-imp-needed" class = "option" value = "imp-needed" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "suggests" id = "dmps-meets-exp" class = "option" value = "meets-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "suggests" id = "dmps-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "suggests" id = "dmps-exceptional" class = "option" value = "exceptional" required></td>
                             </tr>
                             <tr>
-                                <td>Foresight in planning for the changing circumstances</td>
-                                <td class = "radio-data"><input type = "radio" name = "foresight" id = "adaptability-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "foresight" id = "adaptability-imp-needed" class = "option" value = "imp-needed" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "foresight" id = "adaptability-meets-exp" class = "option" value = "meets-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "foresight" id = "adaptability-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
-                                <td class = "radio-data"><input type = "radio" name = "foresight" id = "adaptability-exceptional" class = "option" value = "exceptional" required></td>
+                                <td>Has a strategic approach to problem solving, instead of trial & error</td>
+                                <td class = "radio-data"><input type = "radio" name = "strategic" id = "dmps-unsatisfactory" class = "option" value = "unsatisfactory" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "strategic" id = "dmps-imp-needed" class = "option" value = "imp-needed" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "strategic" id = "dmps-meets-exp" class = "option" value = "meets-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "strategic" id = "dmps-exceeds-exp" class = "option" value = "exceeds-exp" required></td>
+                                <td class = "radio-data"><input type = "radio" name = "strategic" id = "dmps-exceptional" class = "option" value = "exceptional" required></td>
                             </tr>
                         </tbody>
 
