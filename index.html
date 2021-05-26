@@ -534,7 +534,7 @@ require_once('connection.php');
                 <div class = "text-area-inputs">
                     
                     <div class = "text-area-space">
-                        <label for = "solving-problem">Please give an example of a typical problem encountered by this employee, and how he/she managed to solve it.</label><br>
+                        <label for = "solving-problem">Please give a brief account of any extraordinary contribution done by this employee during this evaluation period.</label><br>
                         <textarea id = "solving-problem" name = "solving-problem" rows = "5" cols = "100"></textarea>
                     </div>
 
@@ -548,6 +548,29 @@ require_once('connection.php');
                         <textarea id = "areas-excel" name = "areas-excel" rows = "5" cols = "100"></textarea>
                     </div>
                 
+                </div>
+
+                <!-- Gross Asset Rating -->
+                <div class = "gross-asset-rating">
+                    <strong>Gross asset rating of the employee on the scale of 1 to 5 (e.g. 5 - Highly valuable employee)</strong>
+                    <table class = "gross-rating-table">
+                        <tbody>
+                            <tr>
+                                <td class = "gross-rating"><label for = "one">1</label></td>
+                                <td class = "gross-rating"><label for = "two">2</label></td>
+                                <td class = "gross-rating"><label for = "three">3</label></td>
+                                <td class = "gross-rating"><label for = "four">4</label></td>
+                                <td class = "gross-rating"><label for = "five">5</label></td>
+                            </tr>
+                            <tr>
+                                <td class = "gross-rating"><input type = "radio" id = "one" name = "one" value = "one"></td>
+                                <td class = "gross-rating"><input type = "radio" id = "two" name = "two" value = "two"></td>
+                                <td class = "gross-rating"><input type = "radio" id = "three" name = "three" value = "three"></td>
+                                <td class = "gross-rating"><input type = "radio" id = "four" name = "four" value = "four"></td>
+                                <td class = "gross-rating"><input type = "radio" id = "five" name = "five" value = "five"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <!-- Recommend for Employee -->
