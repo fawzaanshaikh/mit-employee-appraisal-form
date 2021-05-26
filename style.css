@@ -5,6 +5,23 @@
 
 body {
     height: 1vh;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
 }
 
 footer {
@@ -23,6 +40,10 @@ footer {
     border-left: solid 1px grey;
     border-radius: 5px;
     padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Typed Input */
