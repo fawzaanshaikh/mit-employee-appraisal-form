@@ -49,25 +49,25 @@ require_once('connection.php');
                             <tr>
                                 <td class = "typed-td"><label for = "emp-name">Name of the employee: </label></td>
                                 <td class = "typed-td">
-                                    <input type = "text" id = "emp-name" placeholder = " Enter the name" size = "30" required>
+                                    <input type = "text" id = "emp-name" name = "emp-name" placeholder = " Enter the name" size = "30" required>
                                 </td><br>
                             </tr>
                             <tr>
                                 <td class = "typed-td"><label for = "emp-id">Employee ID: </label></td>
                                 <td class = "typed-td">
-                                    <input type = "text" id = "emp-id" placeholder = " Enter the ID" size = "30"><br>
+                                    <input type = "text" id = "emp-id" name = "emp-id" placeholder = " Enter the ID" size = "30"><br>
                                 </td>
                             </tr>
                             <tr>
                                 <td class = "typed-td"><label for = "institute">Name of the Institute and Department: </label></td>
                                 <td class = "typed-td">
-                                    <input type = "text" id = "institute" placeholder = " Enter the Institute & Department" size = "30" required><br>
+                                    <input type = "text" id = "institute" name = "institute" placeholder = " Enter the Institute & Department" size = "30" required><br>
                                 </td>
                             </tr>
                             <tr>
                                 <td class = "typed-td"><label for = "supervisor">Name of the Supervisor: </label></td>
                                 <td class = "typed-td">
-                                    <input type = "text" id = "supervisor" placeholder = " Enter the name of the Supervisor" size = "30" required><br>
+                                    <input type = "text" id = "supervisor" name = "supervisor" placeholder = " Enter the name of the Supervisor" size = "30" required><br>
                                 </td>
                             </tr>
                         </tbody>
@@ -526,6 +526,27 @@ require_once('connection.php');
                         </tbody>
 
                     </table>
+                </div>
+
+                <hr class = "horizontal-line">
+
+                <div class = "text-area-inputs">
+                    
+                    <div class = "text-area-space">
+                        <label for = "solving-problem">Please give an example of a typical problem encountered by this employee, and how he/she managed to solve it.</label><br>
+                        <textarea id = "solving-problem" name = "solving-problem" rows = "5" cols = "100"></textarea>
+                    </div>
+
+                    <div class = "text-area-space">
+                        <label for = "areas-improve">In what areas could this person improve during the period under review?</label><br>
+                        <textarea id = "areas-improve" name = "areas-improve" rows = "5" cols = "100"></textarea>
+                    </div>
+
+                    <div class = "text-area-space">
+                        <label for = "areas-excel">In what areas could this person excel?</label><br>
+                        <textarea id = "areas-excel" name = "areas-excel" rows = "5" cols = "100"></textarea>
+                    </div>
+                
                 </div>
 
             </form>
