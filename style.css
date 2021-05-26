@@ -59,3 +59,9 @@ th {
 .radio-data {
     text-align: center; 
 }
+
+/* Dependability Table */
+.depend {
+    position: relative;
+    top: 40px;
+}
