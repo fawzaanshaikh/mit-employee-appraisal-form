@@ -10,7 +10,7 @@ body {
 /* Typed Input */
 .typed-input {
     position: relative;
-    top: 100px;
+    top: 80px;
     height: 200px;
     width: 455px;
     margin: auto;
@@ -67,6 +67,12 @@ th {
 }
 
 /* Miscellaneous */
+h1 {
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+
 .horizontal-line {
     width: 35%; 
     border: solid 1px rgb(218, 218, 218); 
